@@ -1,0 +1,63 @@
+public class BubbleSortGeneric {
+	private double[] element;
+	private double eSize;
+	
+	public BubbleSortGeneric(long size) {
+		if(size > 0)
+			this.element = new double[(int) size];
+		else
+			this.element = new double[10];
+		eSize = 0;
+		
+	}
+	public void insert(long e) {
+		this.element[(int) eSize] = (int) e;
+		eSize++;
+		
+	}
+	public void show() {
+		for (int i = 0; i < eSize; i++) {
+			System.out.print(this.element[i]+ " ");
+		}
+		System.out.print(" ");
+	}
+	public void bubbleSort() {
+		int out , in;
+		
+		for(out = (int) (eSize - 1); out> 0; out--) {
+			for(in = 0; in < out; in++) {
+				if(this.element[in] > this.element[in +1]) {
+					this.swap(in, in+1);
+				}
+		}
+	}
+
+	}
+	private void swap(int left, int right) {
+		int temp = (int) this.element[left];
+		this.element[left] = this.element[right];
+		this.element[right]= temp;
+		
+	}
+	public static void main(String[] arga) {
+		int max = 20;
+		BubbleSortGeneric bubble = new BubbleSortGeneric(max);
+		
+		
+		bubble.insert(103);
+		bubble.insert(001);
+		bubble.insert(198);
+		bubble.insert(104);
+		bubble.insert(205);
+		bubble.insert(298);
+		bubble.insert(131);
+		
+		System.out.print("Original Order: ");
+		bubble.show();
+		
+		bubble.bubbleSort();
+		System.out.print(" Sorted Order: ");
+		bubble.show();
+		
+	}
+	}
