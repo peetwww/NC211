@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>ชื่อ</h2>
+
+<form action="/action_page.php">
+  <label for="fname">ระบุชื่อ:</label><br>
+  <input type="text" id="fname" name="fname" value="กฤษฎา"><br>
+  <label for="lname">ระบุนามสกุล:</label><br>
+  <input type="text" id="lname" name="lname" value="หิรัญญสุทธิ์"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+
+
+<h2>กรุณาใส่ชื่อ</h2>
+
+<form action="/action_page.php">
+  <label for="fname">ชื่อจริง:</label><br>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+<h1>กรุณาใส่ที่อยู่</h1>
+<form action="/action_page.php">
+  <label for="fname">เขต</label><br>
+  <input type="text" id="fname" name="fname" value="สัมพันธวงศ์"><br>
+  <label for="lname">จังหวัด</label><br>
+  <input type="text" id="lname" name="lname" value="กรุงเทพ"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1>กรุณาใส่มหาลัยที่กำลังศึกษาอยู่</h1>
+<form action="/action_page.php" id="form1">
+  <label for="fname">มหาลัย:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1>เลขบัตรประจำตัวนักศึกษา</h2>
+
+<label for="lname">เลขบัตร:</label>
+<input type="text" id="lname" name="lname" form="form1">
+
+
+</body>
+</html>
